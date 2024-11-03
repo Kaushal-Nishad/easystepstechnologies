@@ -9,12 +9,12 @@ import { A11y, Autoplay, EffectCoverflow } from "swiper/modules";
 
 const OurTeamSection = () => {
     const teamMembers = [
-        { name: 'John Doe', role: 'CEO & Founder', img: '/team-member-1.jpeg' },
-        { name: 'Jane Smith', role: 'CTO', img: '/team-member-2.jpeg' },
-        { name: 'Alex Johnson', role: 'Lead Developer', img: '/team-member-3.jpeg' },
-        { name: 'John Doe', role: 'CEO & Founder', img: '/team-member-1.jpeg' },
-        { name: 'Jane Smith', role: 'CTO', img: '/team-member-2.jpeg' },
-        { name: 'Alex Johnson', role: 'Lead Developer', img: '/team-member-3.jpeg' }
+        { name: 'John Doe', role: 'CEO & Founder', img: '/easystepstechnologies/team-member-1.jpeg' },
+        { name: 'Jane Smith', role: 'CTO', img: '/easystepstechnologies/team-member-2.jpeg' },
+        { name: 'Alex Johnson', role: 'Lead Developer', img: '/easystepstechnologies/team-member-3.jpeg' },
+        { name: 'John Doe', role: 'CEO & Founder', img: '/easystepstechnologies/team-member-1.jpeg' },
+        { name: 'Jane Smith', role: 'CTO', img: '/easystepstechnologies/team-member-2.jpeg' },
+        { name: 'Alex Johnson', role: 'Lead Developer', img: '/easystepstechnologies/team-member-3.jpeg' }
     ];
 
     return (

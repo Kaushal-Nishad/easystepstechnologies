@@ -1,5 +1,8 @@
 import HeroSection from "@/components/HeroSection";
+import ServicesSection from "@/components/ServicesSection";
 import Testimonials from "@/components/Testimonials";
+
+
 
 export default function Home() {
   return (
@@ -21,43 +24,7 @@ export default function Home() {
         </a>
       </section> */}
 
-      {/* Services Overview */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800">Our IT Services</h2>
-            <p className="mt-4 text-lg text-gray-600">
-              We provide a full range of IT services designed to help your business succeed in the digital age.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-white rounded-lg shadow p-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Software Development</h3>
-              <p className="text-gray-600">
-                Custom software solutions tailored to meet your unique business requirements.
-              </p>
-            </div>
-
-            {/* Service 2 */}
-            <div className="bg-white rounded-lg shadow p-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Cloud Solutions</h3>
-              <p className="text-gray-600">
-                Scalable cloud infrastructure to ensure your business can grow without limits.
-              </p>
-            </div>
-
-            {/* Service 3 */}
-            <div className="bg-white rounded-lg shadow p-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-3">IT Consulting</h3>
-              <p className="text-gray-600">
-                Strategic IT consulting services to help you plan and implement your digital transformation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServicesSection />
 
       {/* Why Choose Us */}
       <section className="py-20  text-center">

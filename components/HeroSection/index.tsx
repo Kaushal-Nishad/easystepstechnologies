@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { TypeAnimation } from "react-type-animation";
+
 
 const HeroSection = () => {
     const slides = [
@@ -17,7 +17,7 @@ const HeroSection = () => {
     ];
 
     return (
-        <section className="h-fit mt-16 pt-3 flex justify-center items-center bg-blue-900 text-white text-center relative">
+        <section className="h-fit mt-14 pt-4 flex justify-center items-center bg-blue-900 text-white text-center relative">
             {/* Navigation Buttons */}
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>

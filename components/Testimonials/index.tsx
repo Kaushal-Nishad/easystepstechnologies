@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -47,7 +46,7 @@ const Testimonials = () => {
             <SwiperSlide key={index}>
               <div className="flex flex-col justify-center items-center h-full px-6">
                 <p className="text-lg text-gray-600 italic mb-4">
-                  "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
                 </p>
                 <p className="font-bold text-gray-800">{testimonial.author}</p>
               </div>

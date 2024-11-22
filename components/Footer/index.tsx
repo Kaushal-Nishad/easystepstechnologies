@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import MobileNavigation from './MobileNavigation';
+// import MobileNavigation from './MobileNavigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="w-full footer">
-      <MobileNavigation />
-      <div className=" hidden lg:block container mx-auto px-4 py-10">
+      {/* <MobileNavigation /> */}
+      <div className="container mx-auto px-4 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-10">
           {/* About Us Section */}
           <div>

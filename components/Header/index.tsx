@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex justify-between items-center">
             <Link href={'/'} >
-            <Image src={'/easystepstechnologies/logo.png'} alt='EasySteps Technologies Logo' width={100} height={36}/>
+              <Image src={'/logo.png'} alt='EasySteps Technologies Logo' width={100} height={36} />
             </Link>
           </div>
 
@@ -66,6 +66,9 @@ const Header: React.FC = () => {
             <Link href="/" className="hover:text-gray-400">Home</Link>
             <Link href="/about-us" className="hover:text-gray-400">About</Link>
             <Link href="/services" className="hover:text-gray-400">Services</Link>
+            <Link href="/portfolio" className="hover:text-gray-400">Portfolio</Link>
+            <Link href="/courses" className="hover:text-gray-400">Courses & Certifications</Link>
+            <Link href="/success-stories" className="hover:text-gray-400">Success Stories</Link>
             <Link href="/contact-us" className="hover:text-gray-400">Contact</Link>
           </nav>
         </div>
@@ -80,13 +83,18 @@ const Header: React.FC = () => {
       >
         <div className="flex flex-col toggle-nav h-full p-4">
           <div className="text-2xl font-bold mb-8">
-            EasySteps
+            <Link href={'/'} >
+              <Image src={'/easystepstechnologie/logo.png'} alt='EasySteps Technologies Logo' width={100} height={36} />
+            </Link>
           </div>
           <nav className="flex flex-col space-y-4">
-            <a href="#" className="hover:text-gray-400" onClick={closeDrawer}>Home</a>
-            <a href="#" className="hover:text-gray-400" onClick={closeDrawer}>About</a>
-            <a href="#" className="hover:text-gray-400" onClick={closeDrawer}>Services</a>
-            <a href="#" className="hover:text-gray-400" onClick={closeDrawer}>Contact</a>
+            <Link href="/" className="hover:text-gray-400" onClick={closeDrawer}>Home</Link>
+            <Link href="/about-us" className="hover:text-gray-400" onClick={closeDrawer}>About Us</Link>
+            <Link href="/services" className="hover:text-gray-400" onClick={closeDrawer}>Services</Link>
+            <Link href="/portfolio" className="hover:text-gray-400">Portfolio</Link>
+            <Link href="/courses" className="hover:text-gray-400">Courses & Certifications</Link>
+            <Link href="/success-stories" className="hover:text-gray-400">Success Stories</Link>
+            <Link href="/contact-us" className="hover:text-gray-400" onClick={closeDrawer}>Contact Us</Link>
           </nav>
         </div>
       </motion.div>

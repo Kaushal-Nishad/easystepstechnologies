@@ -1,6 +1,26 @@
 import React from "react";
 import Breadcum from "@/components/Breadcum";
 import OurTeamSection from "@/components/TeamSection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us - EasySteps Technologies",
+  description: "Learn about EasySteps Technologies, a leading IT solutions provider dedicated to empowering businesses through innovation and expertise.",
+  icons: { icon: "/logo.png" },
+  openGraph: {
+    title: "About Us - EasySteps Technologies",
+    description: "Discover our journey, mission, and expertise in delivering world-class IT solutions to help businesses grow and thrive.",
+    url: "/about",
+    images: ["/team-member-1.jpeg"], // Replace with an actual team or relevant image
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - EasySteps Technologies",
+    description: "Get to know EasySteps Technologies and our mission to drive digital transformation for businesses worldwide.",
+    images: ["/team-member-1.jpeg"], // Replace with an actual team or relevant image
+  },
+};
+
 
 const AboutUs = () => {
   const breadcrumbs = [

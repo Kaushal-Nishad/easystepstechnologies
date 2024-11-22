@@ -1,66 +1,26 @@
-"use client";
-
-import { useState } from 'react';
-// import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Breadcum from '@/components/Breadcum';
+import Form from '@/components/Form';
+import { Metadata } from 'next';
 
-
-// const mapContainerStyle = {
-//   width: '100%',
-//   height: '400px'
-// };
-
-// const center = { lat: 26.7846537, lng: 83.5128861 };
+export const metadata: Metadata = {
+  title: "Contact Us - EasySteps Technologies",
+  description: "Get in touch with EasySteps Technologies for expert IT solutions and support. We're here to help your business thrive.",
+  icons: { icon: "/logo.png" },
+  openGraph: {
+    title: "Contact Us - EasySteps Technologies",
+    description: "Have questions or need assistance? Contact EasySteps Technologies today and let us help you achieve your business goals.",
+    url: "/contact",
+    // images: ["/contact-banner.png"], // Replace with an actual contact-related image
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us - EasySteps Technologies",
+    description: "Reach out to EasySteps Technologies for tailored IT solutions and exceptional support for your business.",
+    // images: ["/contact-banner.png"], // Replace with an actual contact-related image
+  },
+};
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [errors, setErrors] = useState({ name: '', email: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const validateForm = () => {
-    let valid = true;
-    const newErrors = { name: '', email: '', message: '' };
-
-    if (!formData.name) {
-      newErrors.name = 'Name is required';
-      valid = false;
-    }
-    if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'A valid email is required';
-      valid = false;
-    }
-    if (!formData.message) {
-      newErrors.message = 'Message cannot be empty';
-      valid = false;
-    }
-    setErrors(newErrors);
-    return valid;
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!validateForm()) return;
-
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-
-    if (response.ok) {
-      setFormData({ name: '', email: '', message: '' });
-      setErrors({ name: '', email: '', message: '' });
-      setSubmitted(true);
-    } else {
-      console.error('Failed to submit form');
-    }
-  };
-
     const breadcrumbs = [
       { label: 'Home', href: '/' },
       { label: 'contact' },
@@ -81,63 +41,7 @@ const Contact = () => {
           <p>Phone: +91 7985799619</p>
           <p>Email: kaushalnishad212@gmail.com</p>
         </div>
-
-        {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg drop-shadow-lg space-y-6">
-          <div>
-            <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className={`w-full px-4 py-2 border rounded-lg focus:outline-none ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
-            />
-            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
-          </div>
-
-          <div>
-            <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className={`w-full px-4 py-2 border rounded-lg focus:outline-none ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
-            />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
-          </div>
-
-          <div>
-            <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              rows={4}
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className={`w-full px-4 py-2 border rounded-lg focus:outline-none ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
-            />
-            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
-          </div>
-
-          <button
-            type="submit"
-            className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md focus:outline-none hover:bg-indigo-700 transition-all"
-          >
-            Send Message
-          </button>
-          {submitted && (
-            <p className="mt-4 text-green-600 text-center font-medium">
-              Thank you for reaching out! We’ll get back to you shortly.
-            </p>
-          )}
-        </form>
+        <Form/>
       </div>
       {/* Full-width Google Map */}
       <div className="w-full flex justify-center mt-12 mb-0 pb-0">

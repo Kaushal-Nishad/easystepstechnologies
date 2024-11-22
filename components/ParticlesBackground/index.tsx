@@ -9,18 +9,7 @@ import {
 } from "@tsparticles/engine";
 
 const ParticlesBackground = () => {
-  // const [init, setInit] = useState(false);
-  // const particlesInit = useEffect(() => {
-  //   initParticlesEngine(async (engine) => {
-
-  //     await loadSlim(engine);
-  //   }).then(() => {
-  //     setInit(true);
-  //   });
-  // }, []);
-
   const particlesLoaded = async (): Promise<void> => {
-    // console.log(container);
   };
 
   const options: ISourceOptions = useMemo(

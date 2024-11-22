@@ -1,6 +1,27 @@
 import HeroSection from "@/components/HeroSection";
+import ParticlesBackground from "@/components/ParticlesBackground";
 import ServicesSection from "@/components/ServicesSection";
 import Testimonials from "@/components/Testimonials";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "EasySteps Technologies",
+  description: "Official website of EasySteps Technologies",
+  icons: { icon: "/logo.png" },
+  openGraph: {
+    title: "EasySteps Technologies",
+    description: "We deliver tailored IT solutions to help businesses scale, innovate, and succeed globally.",
+    url: "",
+    images: ["/logo.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EasySteps Technologies",
+    description: "Discover how EasySteps Technologies can empower your business with innovative IT solutions and expert guidance.",
+    images: ["/logo.png"],
+  },
+};
 
 
 
@@ -71,6 +92,9 @@ export default function Home() {
           >
             Get in Touch
           </a>
+        </div>
+        <div className="absolute inset-0 -z-10">
+          <ParticlesBackground />
         </div>
       </section>
     </div>

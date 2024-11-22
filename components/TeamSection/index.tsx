@@ -9,12 +9,13 @@ import { A11y, Autoplay, EffectCoverflow } from "swiper/modules";
 
 const OurTeamSection = () => {
     const teamMembers = [
-        { name: 'John Doe', role: 'CEO & Founder', img: '/easystepstechnologies/team-member-1.jpeg' },
-        { name: 'Jane Smith', role: 'CTO', img: '/easystepstechnologies/team-member-2.jpeg' },
-        { name: 'Alex Johnson', role: 'Lead Developer', img: '/easystepstechnologies/team-member-3.jpeg' },
-        { name: 'John Doe', role: 'CEO & Founder', img: '/easystepstechnologies/team-member-1.jpeg' },
-        { name: 'Jane Smith', role: 'CTO', img: '/easystepstechnologies/team-member-2.jpeg' },
-        { name: 'Alex Johnson', role: 'Lead Developer', img: '/easystepstechnologies/team-member-3.jpeg' }
+        { name: 'Kaushal Nishad', role: 'CTO & Founder', img: '/Kaushal-nishad.jpeg' },
+        { name: 'Deepak Yadav', role: 'Junior Developer', img: '/dipak-yadav.webp' },
+        { name: 'Baliram Singh', role: 'Marketing Expert & Co-Founder', img: '/baliram-singh.webp' },
+        { name: 'Sagar Negi', role: 'Digital Marketing Expert', img: '/sagar-negi.webp' },
+        { name: 'Alok Pandey', role: 'Tally Prime Expert', img: '/alok-pandey.webp' },
+        { name: 'Ajay Vishwakarma', role: 'DCA/ADCA Teacher', img: '/ajay-sir.webp' },
+
     ];
 
     return (
@@ -27,7 +28,7 @@ const OurTeamSection = () => {
                 centeredSlides={true}
                 slidesPerView={3}
                 loop={true}
-                autoplay={{ delay: 2000 }}
+                autoplay={{ delay: 1000 }}
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
@@ -35,7 +36,21 @@ const OurTeamSection = () => {
                     modifier: 1,
                     slideShadows: true,
                 }}
-                speed={6000}
+                speed={5000}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                    1440: {
+                        slidesPerView: 4,
+                    },
+                }}
                 className="w-full  mx-auto"
             >
                 {teamMembers.map((member, index) => (

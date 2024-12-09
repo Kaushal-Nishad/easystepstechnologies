@@ -1,17 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
+  output: 'export',
+  images: {
+    domains: ['easystepstechnologies.com'], // Add your external domain here
+    unoptimized: true, // Disable image optimization for static hosting
+  },
  
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  // trailingSlash: true,
- 
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-  // skipTrailingSlashRedirect: true,
+  // Optional: Add a trailing slash to all paths (useful for static hosting)
+  trailingSlash: true,
+
+  // Optional: Prevent automatic `/path` -> `/path/` redirects
+  skipTrailingSlashRedirect: true,
  
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
-  eslint: {
-    ignoreDuringBuilds: true, 
-  },
+  // eslint: {
+  //   ignoreDuringBuilds: true, 
+  // },
 };
 export default nextConfig;

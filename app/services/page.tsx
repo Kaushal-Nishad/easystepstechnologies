@@ -4,11 +4,11 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: "Our Services - EasySteps Technologies",
     description: "Explore our wide range of IT services designed to help businesses innovate, scale, and succeed in a digital-first world.",
-    icons: { icon: "/logo.png" },
+    icons: { icon: "https://easystepstechnologies.com/logo.png" },
     openGraph: {
       title: "Our Services - EasySteps Technologies",
       description: "Discover tailored IT solutions from EasySteps Technologies, including software development, cloud services, and IT consulting.",
-      url: "/services",
+      url: "https://easystepstechnologies.com/services",
     //   images: ["/services-banner.png"], // Replace with a relevant services-related image
     },
     twitter: {

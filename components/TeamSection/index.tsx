@@ -9,12 +9,12 @@ import { A11y, Autoplay, EffectCoverflow } from "swiper/modules";
 
 const OurTeamSection = () => {
     const teamMembers = [
-        { name: 'Kaushal Nishad', role: 'CTO & Founder', img: '/Kaushal-nishad.jpeg' },
-        { name: 'Deepak Yadav', role: 'Junior Developer', img: '/dipak-yadav.webp' },
-        { name: 'Baliram Singh', role: 'Marketing Expert & Co-Founder', img: '/baliram-singh.webp' },
-        { name: 'Sagar Negi', role: 'Digital Marketing Expert', img: '/sagar-negi.webp' },
-        { name: 'Alok Pandey', role: 'Tally Prime Expert', img: '/alok-pandey.webp' },
-        { name: 'Ajay Vishwakarma', role: 'DCA/ADCA Teacher', img: '/ajay-sir.webp' },
+        { name: 'Kaushal Nishad', role: 'CTO & Founder', img: 'https://easystepstechnologies.com/Kaushal-nishad.jpeg' },
+        { name: 'Deepak Yadav', role: 'Junior Developer', img: 'https://easystepstechnologies.com/dipak-yadav.webp' },
+        { name: 'Baliram Singh', role: 'Marketing Expert & Co-Founder', img: 'https://easystepstechnologies.com/baliram-singh.webp' },
+        { name: 'Sagar Negi', role: 'Digital Marketing Expert', img: 'https://easystepstechnologies.com/sagar-negi.webp' },
+        { name: 'Alok Pandey', role: 'Tally Prime Expert', img: 'https://easystepstechnologies.com/alok-pandey.webp' },
+        { name: 'Ajay Vishwakarma', role: 'DCA/ADCA Teacher', img: 'https://easystepstechnologies.com/ajay-sir.webp' },
 
     ];
 

@@ -5,11 +5,11 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Contact Us - EasySteps Technologies",
   description: "Get in touch with EasySteps Technologies for expert IT solutions and support. We're here to help your business thrive.",
-  icons: { icon: "/logo.png" },
+  icons: { icon: "https://easystepstechnologies.com/logo.png" },
   openGraph: {
     title: "Contact Us - EasySteps Technologies",
     description: "Have questions or need assistance? Contact EasySteps Technologies today and let us help you achieve your business goals.",
-    url: "/contact",
+    url: "https://easystepstechnologies.com/contact",
     // images: ["/contact-banner.png"], // Replace with an actual contact-related image
   },
   twitter: {

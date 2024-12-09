@@ -48,7 +48,7 @@ const HeroSection = () => {
                     <SwiperSlide key={index}>
                         <div
                             className="flex p-20 flex-col justify-center items-center h-full bg-cover bg-center text-white"
-                            style={{ backgroundImage: `url(/slider-${index + 1}.jpg)` }} // dynamically sets background image
+                            style={{ backgroundImage: `url(https://easystepstechnologies.com/slider-${index + 1}.jpg)` }} // dynamically sets background image
                         >
                             <h1 className="text-5xl font-bold">
                                 {slide}

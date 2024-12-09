@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NextTopLoader from 'nextjs-toploader';
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -13,6 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`flex flex-col min-h-screen`}>
+        <Script
+          id="tawk-to-script"
+          strategy="afterInteractive"
+          src="https://embed.tawk.to/67448d092480f5b4f5a3a0cb/1idhsdscr"
+        />
         <Header />
         <main className="flex-grow">
           <NextTopLoader
@@ -33,6 +39,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+
+
       </body>
     </html>
   );

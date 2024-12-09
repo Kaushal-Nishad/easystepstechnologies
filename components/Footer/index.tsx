@@ -3,8 +3,9 @@
 import React from 'react';
 // import MobileNavigation from './MobileNavigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedinIn, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
 
@@ -51,21 +52,35 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4 justify-start text-white">
-              <a href="#" className="hover:text-gray-400">
+              <a href="https://www.facebook.com/profile.php?id=100086576976056" target='_blank' className="hover:text-gray-400">
                 <FontAwesomeIcon icon={faFacebook} size="lg" style={{ color: '#1877F2' }} />
               </a>
-              <a href="#" className="hover:text-gray-400">
+              <a href="https://x.com/EasyStepsTech1" target='_blank' className="hover:text-gray-400">
                 <FontAwesomeIcon icon={faXTwitter} size="lg" style={{ color: '#1DA1F2' }} />
               </a>
-              <a href="#" className="hover:text-gray-400">
+              <a href="#" className="hover:text-gray-400" target='_blank'>
                 <FontAwesomeIcon icon={faInstagram} size="lg" style={{ color: '#E4405F' }} />
               </a>
-              <a href="#" className="hover:text-gray-400">
+              <a href="https://www.linkedin.com/in/kaushal-nishad-7aa5b228b/" className="hover:text-gray-400" target='_blank'>
+                <FontAwesomeIcon icon={faLinkedinIn} size="lg" style={{ color: '#E4405F' }} />
+              </a>
+              <a href="https://www.youtube.com/@easystepstechnologies" className="hover:text-gray-400" target='_blank'>
                 <FontAwesomeIcon icon={faYoutube} size="lg" style={{ color: '#FF0000' }} />
               </a>
             </div>
           </div>
         </div>
+
+        <a
+          href="https://wa.me/917985799619?text=Welcome to The EasySteps Technologies.\n How can I help You?"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-4 left-4 bg-green-500 text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-transform transform hover:scale-105 z-50"
+          aria-label="Chat on WhatsApp"
+        >
+          <Image src="/WhatsApp.webp" alt="WhatsApp Icon" height={30} width={30} />
+        </a>
+
 
         {/* Footer Bottom */}
         <div className="flex flex-col sm:flex-row justify-between items-center text-xs text-zinc-500 mt-8">

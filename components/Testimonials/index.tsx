@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import { EffectCube, Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -44,7 +45,8 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col justify-center items-center h-full px-6">
+              <div className="flex flex-col justify-center items-center h-full px-6 pb-10 pt-6">
+                <Image src={`https://easystepstechnologies.com/logo-with-bg.ico`} alt="EST User Img" height={70} width={80} className="rounded-full mb-6" />
                 <p className="text-lg text-gray-600 italic mb-4">
                 &quot;{testimonial.quote}&quot;
                 </p>

@@ -8,18 +8,18 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "EasySteps Technologies",
   description: "Official website of EasySteps Technologies",
-  icons: { icon: "/logo.png" },
+  icons: { icon: "https://easystepstechnologies.com/logo.png" },
   openGraph: {
     title: "EasySteps Technologies",
     description: "We deliver tailored IT solutions to help businesses scale, innovate, and succeed globally.",
     url: "",
-    images: ["/logo.png"],
+    images: ["https://easystepstechnologies.com/logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "EasySteps Technologies",
     description: "Discover how EasySteps Technologies can empower your business with innovative IT solutions and expert guidance.",
-    images: ["/logo.png"],
+    images: ["https://easystepstechnologies.com/logo.png"],
   },
 };
 
@@ -87,7 +87,9 @@ export default function Home() {
             Contact us today to discuss how we can help you take your business to the next level.
           </p>
           <a
-            href="/contact"
+            href="https://wa.me/917985799619?text=Welcome to The EasySteps Technologies.\n How can I help You?"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-3 bg-white text-blue-600 rounded-md shadow hover:bg-gray-100 transition duration-300"
           >
             Get in Touch

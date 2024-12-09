@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex justify-between items-center">
             <Link href={'/'} >
-              <Image src={'/logo.png'} alt='EasySteps Technologies Logo' width={100} height={36} />
+              <Image src={'https://easystepstechnologies.com/logo.png'} alt='EasySteps Technologies Logo' width={100} height={36} />
             </Link>
           </div>
 
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
         <div className="flex flex-col toggle-nav h-full p-4">
           <div className="text-2xl font-bold mb-8">
             <Link href={'/'} >
-              <Image src={'/easystepstechnologie/logo.png'} alt='EasySteps Technologies Logo' width={100} height={36} />
+              <Image src={'https://easystepstechnologies.com/logo.png'} alt='EasySteps Technologies Logo' width={100} height={36} />
             </Link>
           </div>
           <nav className="flex flex-col space-y-4">
